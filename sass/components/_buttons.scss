@@ -1,5 +1,13 @@
 .btn-main{
     border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    @include btn-gradient;
+
+    a{
+        color: #fff;
+    }
 }
 
 .btn-return{
@@ -14,5 +22,21 @@
 
     &--inactive{
         visibility: hidden;
+    }
+}
+
+.btn-locator{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: $font-dark;
+    box-shadow: inset 0px 2.5px 4px rgb(209, 209, 209);
+    
+    i{
+        margin: auto 13px;
     }
 }

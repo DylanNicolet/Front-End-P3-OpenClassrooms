@@ -1,0 +1,3 @@
+@mixin btn-gradient($color-1:$color-primary,$color-2:$color-secondary) {
+    background-image: linear-gradient($color-2,$color-1);
+}

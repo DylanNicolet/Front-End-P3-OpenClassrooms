@@ -1,0 +1,21 @@
+#intro{
+    background-color: $bkg-secondary;
+    text-align: center;
+
+    h1{
+        margin: 0px;
+        padding: 40px 0px;
+        font-size: 24px;
+    }
+
+    p{
+        color: $font-dark;
+        font-size: 17px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    button{
+        margin: 0px 0px 50px 0px;
+        padding: 12px 20px;
+    }
+}
