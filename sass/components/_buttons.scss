@@ -4,9 +4,14 @@
     outline: none;
     border: none;
     @include btn-gradient;
+    @include drop-shadow;
 
     a{
         color: #fff;
+    }
+
+    &:hover{
+        @include btn-hover;
     }
 }
 
@@ -34,9 +39,20 @@
     font-weight: 600;
     font-size: 15px;
     color: $font-dark;
+    outline: none;
+    cursor: pointer;
     box-shadow: inset 0px 2.5px 4px rgb(209, 209, 209);
     
     i{
         margin: auto 13px;
+    }
+
+    @include tablette-only{
+        width: 180px;
+        padding: 0px 10px 0px 0px;
+        position: absolute;
+        right: 30px;
+        top: 12px;
+        border-radius: 50px;
     }
 }

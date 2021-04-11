@@ -16,9 +16,14 @@ a {
   outline: none;
   border: none;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 3px 10px #8a8a8a;
 }
 .btn-main a {
   color: #fff;
+}
+.btn-main:hover {
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 3px 10px #575757;
 }
 
 .btn-return {
@@ -44,10 +49,22 @@ a {
   font-weight: 600;
   font-size: 15px;
   color: #575757;
+  outline: none;
+  cursor: pointer;
   box-shadow: inset 0px 2.5px 4px #d1d1d1;
 }
 .btn-locator i {
   margin: auto 13px;
+}
+@media only screen and (min-width: 768px) {
+  .btn-locator {
+    width: 180px;
+    padding: 0px 10px 0px 0px;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    border-radius: 50px;
+  }
 }
 
 header {
