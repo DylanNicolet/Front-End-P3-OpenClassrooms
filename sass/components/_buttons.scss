@@ -16,14 +16,15 @@
 }
 
 .btn-return{
-    height: 100%;
+    min-height: 100%;
     font-size: 20px;
-    padding: 0px 25px;
+    padding: auto 25px;
     margin: auto 0px;
-    position: absolute;
-    left: 0px;
     background-color: white;
     border: none;
+    outline: none;
+    position: absolute;
+    left: 5%;
 
     &--inactive{
         visibility: hidden;
@@ -47,11 +48,11 @@
         margin: auto 13px;
     }
 
-    @include tablette-only{
+    @include tablet-only{
         width: 180px;
-        padding: 0px 10px 0px 0px;
+        padding: 0px 20px 0px 0px;
         position: absolute;
-        right: 30px;
+        right: 5%;
         top: 12px;
         border-radius: 50px;
     }

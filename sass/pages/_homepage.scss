@@ -5,7 +5,7 @@
     h1{
         margin: 0px;
         padding: 40px 0px;
-        font-size: 24px;
+        font-size: $h1-size;
     }
 
     p{
@@ -16,6 +16,64 @@
 
     button{
         margin: 0px 0px 50px 0px;
-        padding: 12px 20px;
+        padding: 13px 20px;
+    }
+
+    @include tablet-only{
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+}
+
+.how-it-works{
+    width: 90%;
+    margin: auto;
+
+    h1{
+        font-size: $h1-size;
+    }
+
+    &__card{
+        width: auto;
+        display: flex;
+        background-color: $bkg-secondary;
+        @include drop-shadow(#dddddd);
+        border-radius: 15px;
+        margin: 20px 0px 20px 3%;
+        padding: 2px 25px 2px 30px;
+        align-items: center;
+        position: relative;
+
+        h4{
+            position: absolute;
+            left: -10px;
+            background-color: $color-primary;
+            color: #fff;
+            font-weight: 400;
+            font-size: 15px;
+            padding: 2px 7px;
+            border-radius: 50px;
+        }
+
+        i{
+            width: 6px;
+            color: $font-dark;
+        }
+
+        p{
+            margin: 17px 0px;
+            padding: 0px 30px;
+            font-weight: 600;
+        }
+
+        &--highlighted{
+            background-color: lighten($color-primary, 35%);
+
+            i{
+                color: $color-primary;
+            }
+        }
+
     }
 }

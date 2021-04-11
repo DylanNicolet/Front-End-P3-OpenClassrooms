@@ -9,4 +9,7 @@ header{
         margin: 20px 0px 15px 0px;
         z-index: -1;
     }
+
+    @include tablet-only{
+    }
 }
