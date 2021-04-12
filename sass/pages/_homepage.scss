@@ -13,7 +13,6 @@
     h1{
         margin: 0px;
         padding: 40px 0px;
-        font-size: $h1-size;
     }
 
     p{
@@ -41,9 +40,9 @@
 .how-it-works{
     width: 90%;
     margin: auto;
+    padding: 20px 0px 30px 0px;
 
     h1{
-        font-size: $h1-size;
         min-width: 100%;
     }
 
@@ -116,4 +115,61 @@
         }
 
     }
+}
+
+.restaurant-section{
+    background-color: $bkg-secondary;
+    padding: 30px 0px;
+    width: 100%;
+
+    a{
+        width: 90%;
+    }
+
+    h1{
+        width: 90%;
+        margin: 0px auto 20px auto;
+    }
+
+    &__card{
+        width: 90%;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 15px;
+        @include drop-shadow;
+        position: relative;
+        cursor: pointer;
+
+
+        img{
+            height: 170px;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h2{
+            margin: 10px 10px 4px 10px;
+        }
+
+        p{
+            margin: 0px 10px;
+        }
+    }
+}
+
+.new-tag{
+    background-color: $color-tertiary;
+    color: darken($color-tertiary,40%);
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 2px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    margin: 0px;
 }
