@@ -2,12 +2,12 @@ body {
   width: 100%;
   margin: 0px;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-main {
@@ -15,15 +15,21 @@ a {
   cursor: pointer;
   outline: none;
   border: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 5px 10px #b6b6b6;
+  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
+          box-shadow: 0px 5px 10px #b6b6b6;
 }
+
 .btn-main a {
   color: #fff;
 }
+
 .btn-main:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
   background-image: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 3px 10px #838383;
+  -webkit-box-shadow: 0px 3px 10px #838383;
+          box-shadow: 0px 3px 10px #838383;
 }
 
 .btn-return {
@@ -37,6 +43,7 @@ a {
   position: absolute;
   left: 5%;
 }
+
 .btn-return--inactive {
   visibility: hidden;
 }
@@ -44,19 +51,26 @@ a {
 .btn-locator {
   width: 100%;
   padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   font-weight: 600;
   font-size: 15px;
   color: #575757;
   outline: none;
   cursor: pointer;
-  box-shadow: inset 0px 2.5px 4px #d1d1d1;
+  -webkit-box-shadow: inset 0px 2.5px 4px #d1d1d1;
+          box-shadow: inset 0px 2.5px 4px #d1d1d1;
 }
+
 .btn-locator i {
   margin: auto 13px;
 }
+
 @media only screen and (min-width: 768px) {
   .btn-locator {
     width: 180px;
@@ -73,30 +87,46 @@ header {
   text-align: center;
   position: relative;
 }
+
 header img {
   height: 100%;
   width: auto;
   margin: 20px 0px 15px 0px;
   z-index: -1;
 }
+
+@media only screen and (min-width: 1260px) {
+  #hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+
 #intro {
   background-color: whitesmoke;
   text-align: center;
 }
+
 #intro h1 {
   margin: 0px;
   padding: 40px 0px;
   font-size: 24px;
 }
+
 #intro p {
   color: #575757;
   font-size: 17px;
   margin: 0px 0px 30px 0px;
 }
+
 #intro button {
   margin: 0px 0px 50px 0px;
   padding: 13px 20px;
 }
+
 @media only screen and (min-width: 768px) {
   #intro {
     width: 90%;
@@ -105,36 +135,65 @@ header img {
   }
 }
 
+@media only screen and (min-width: 1260px) {
+  #intro {
+    min-width: 60%;
+  }
+}
+
 .how-it-works {
   width: 90%;
   margin: auto;
 }
+
 .how-it-works h1 {
   font-size: 24px;
   min-width: 100%;
 }
+
 @media only screen and (min-width: 768px) {
   .how-it-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .how-it-works h1 {
     margin: 20px 0px 20px 20px;
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 1260px) {
+  .how-it-works {
+    margin: 0px 5%;
+  }
+  .how-it-works h1 {
+    margin: 20px;
+  }
+}
+
 .how-it-works__card {
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: whitesmoke;
-  box-shadow: 0px 5px 10px #dddddd;
+  -webkit-box-shadow: 0px 5px 10px #dddddd;
+          box-shadow: 0px 5px 10px #dddddd;
   border-radius: 15px;
   margin: 20px 0px 20px 3%;
   padding: 2px 25px 2px 30px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
+
 .how-it-works__card h4 {
   position: absolute;
   left: -10px;
@@ -145,23 +204,35 @@ header img {
   padding: 2px 7px;
   border-radius: 50px;
 }
+
 .how-it-works__card i {
   width: 6px;
   color: #575757;
 }
+
 .how-it-works__card p {
   margin: 17px 0px;
   padding: 0px 30px;
   font-weight: 600;
 }
+
 @media only screen and (min-width: 768px) {
   .how-it-works__card {
     width: 22%;
   }
 }
+
+@media only screen and (min-width: 1260px) {
+  .how-it-works__card {
+    width: 100%;
+  }
+}
+
 .how-it-works__card--highlighted {
   background-color: #f2eafb;
 }
+
 .how-it-works__card--highlighted i {
   color: #9356DC;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
