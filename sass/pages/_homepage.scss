@@ -34,6 +34,10 @@
 
     @include desktop-only{
         min-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
@@ -121,10 +125,8 @@
     background-color: $bkg-secondary;
     padding: 30px 0px;
     width: 100%;
-
-    a{
-        width: 90%;
-    }
+    display: flex;
+    flex-wrap: wrap;
 
     h1{
         width: 90%;
@@ -134,6 +136,7 @@
     &__card{
         width: 90%;
         margin: 20px auto;
+        padding: 0px 0px 15px 0px;
         background-color: #fff;
         border-radius: 15px;
         @include drop-shadow;
@@ -147,6 +150,10 @@
             object-fit: cover;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+
+            @include desktop-only{
+                height: 150px;
+            }
         }
 
         h2{
@@ -155,6 +162,14 @@
 
         p{
             margin: 0px 10px;
+        }
+
+        @include tablet-only{
+            width: 43%;
+        }
+
+        @include desktop-only{
+            width: 20%;
         }
     }
 }
