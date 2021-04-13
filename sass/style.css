@@ -402,4 +402,11 @@ footer a {
   right: 12px;
   margin: 0px;
 }
+
+#bastille__img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
