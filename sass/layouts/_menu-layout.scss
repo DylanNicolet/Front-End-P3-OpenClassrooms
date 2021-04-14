@@ -9,6 +9,7 @@
 
 .menu-section{
     background-color: $bkg-secondary;
+    padding: 0px 0px 60px 0px;
 
     &__title{
         margin: 0px 5%;
@@ -16,7 +17,7 @@
         justify-content: space-between;
 
         h1{
-            margin: 25px 0px;
+            margin: 25px 0px 0px 0px;
             font-family: $title-font;
             font-weight: 400;
             font-size: 2rem;
@@ -26,7 +27,7 @@
     h3{
         font-size: 1.1rem;
         font-weight: 400;
-        margin: 0px 5% 20px 5%;
+        margin: 45px 5% 20px 5%;
         position: relative;
 
         &::before{
@@ -58,7 +59,7 @@
         margin: 10px 7px 7px 10px;
     }
 
-    p{
+    &__description{
         margin: 0px 7px 10px 10px;
     }
 
@@ -67,8 +68,9 @@
     }
 
     &__price{
+        margin: 0px 0px;
         font-weight: 600;
-        padding: 0px 15px;
+        padding: 0px 15px 0px 0px;
         color: $font-dark;
     }
 }
