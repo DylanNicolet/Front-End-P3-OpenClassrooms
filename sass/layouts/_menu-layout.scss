@@ -1,0 +1,74 @@
+.menu{
+
+    &__picture{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+.menu-section{
+    background-color: $bkg-secondary;
+
+    &__title{
+        margin: 0px 5%;
+        display: flex;
+        justify-content: space-between;
+
+        h1{
+            margin: 25px 0px;
+            font-family: $title-font;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+
+    h3{
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0px 5% 20px 5%;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 45px;
+            height: 3px;
+            background-color: $color-tertiary;
+            margin: 0px 0px -5px 0px;
+        }
+    }
+
+}
+
+.meal-card{
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    @include drop-shadow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+    
+    h2{
+        width: 100%;
+        margin: 10px 7px 7px 10px;
+    }
+
+    p{
+        margin: 0px 7px 10px 10px;
+    }
+
+    i{
+        display: none;
+    }
+
+    &__price{
+        font-weight: 600;
+        padding: 0px 15px;
+        color: $font-dark;
+    }
+}

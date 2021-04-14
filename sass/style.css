@@ -48,6 +48,7 @@ body h2 {
   padding: auto 25px;
   margin: auto 0px;
   background-color: white;
+  color: #575757;
   border: none;
   outline: none;
   position: absolute;
@@ -137,7 +138,7 @@ footer h2 {
   font-size: 20px;
   margin: 0px;
   color: white;
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: 400;
 }
 
@@ -171,6 +172,88 @@ footer a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.menu__picture {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-section {
+  background-color: whitesmoke;
+}
+
+.menu-section__title {
+  margin: 0px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-section__title h1 {
+  margin: 25px 0px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.menu-section h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0px 5% 20px 5%;
+  position: relative;
+}
+
+.menu-section h3::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin: 0px 0px -5px 0px;
+}
+
+.meal-card {
+  background-color: white;
+  width: 90%;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
+          box-shadow: 0px 5px 10px #b6b6b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 15px;
+}
+
+.meal-card h2 {
+  width: 100%;
+  margin: 10px 7px 7px 10px;
+}
+
+.meal-card p {
+  margin: 0px 7px 10px 10px;
+}
+
+.meal-card i {
+  display: none;
+}
+
+.meal-card__price {
+  font-weight: 600;
+  padding: 0px 15px;
+  color: #575757;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -401,12 +484,5 @@ footer a {
   top: 12px;
   right: 12px;
   margin: 0px;
-}
-
-#bastille__img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
