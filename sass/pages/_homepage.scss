@@ -2,13 +2,14 @@
     @include desktop-only{
         display: flex;
         width: 90%;
-        margin: 50px auto;
+        margin: 10px auto 50px auto;
     }
 }
 
 #intro{
     background-color: $bkg-secondary;
     text-align: center;
+    padding: 0px 0px 55px 0px;
 
     h1{
         margin: 0px;
@@ -23,7 +24,7 @@
 
     @include tablet-only{
         width: 90%;
-        margin: 10px auto;
+        margin: 0px auto 10px auto;
         border-radius: 15px;
     }
 
@@ -130,7 +131,7 @@
 
     &__card{
         width: 90%;
-        margin: 20px auto;
+        margin: 15px auto;
         padding: 0px 0px 15px 0px;
         background-color: #fff;
         border-radius: 15px;

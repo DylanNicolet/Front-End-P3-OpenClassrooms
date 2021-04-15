@@ -6,10 +6,21 @@ header{
     img{
         height: 100%;
         width: auto;
-        margin: 20px 0px 15px 0px;
+        margin: 20px auto 15px auto;
         z-index: -1;
-    }
 
-    @include tablet-only{
-    }
+        @include tablet-only{
+            margin: 25px auto
+        }
+    }    
 }
+
+.header--homepage{
+        @include tablet-only{
+            text-align: left;
+
+            img{
+                margin: 20px 5% 15px 5%;
+            }
+        }
+    }

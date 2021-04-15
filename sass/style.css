@@ -56,6 +56,7 @@ body h2 {
   outline: none;
   position: absolute;
   left: 5%;
+  cursor: pointer;
 }
 
 .btn-return--inactive {
@@ -91,7 +92,7 @@ body h2 {
     padding: 0px 20px 0px 0px;
     position: absolute;
     right: 5%;
-    top: 12px;
+    top: 16px;
     border-radius: 50px;
   }
 }
@@ -128,8 +129,23 @@ header {
 header img {
   height: 100%;
   width: auto;
-  margin: 20px 0px 15px 0px;
+  margin: 20px auto 15px auto;
   z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  header img {
+    margin: 25px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header--homepage {
+    text-align: left;
+  }
+  .header--homepage img {
+    margin: 20px 5% 15px 5%;
+  }
 }
 
 footer {
@@ -267,13 +283,14 @@ footer a {
     display: -ms-flexbox;
     display: flex;
     width: 90%;
-    margin: 50px auto;
+    margin: 10px auto 50px auto;
   }
 }
 
 #intro {
   background-color: whitesmoke;
   text-align: center;
+  padding: 0px 0px 55px 0px;
 }
 
 #intro h1 {
@@ -290,7 +307,7 @@ footer a {
 @media only screen and (min-width: 768px) {
   #intro {
     width: 90%;
-    margin: 10px auto;
+    margin: 0px auto 10px auto;
     border-radius: 15px;
   }
 }
@@ -426,7 +443,7 @@ footer a {
 
 .restaurant-section__card {
   width: 90%;
-  margin: 20px auto;
+  margin: 15px auto;
   padding: 0px 0px 15px 0px;
   background-color: #fff;
   border-radius: 15px;
