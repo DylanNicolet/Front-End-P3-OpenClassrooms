@@ -84,6 +84,7 @@
 
     &__description{
         margin: 0px 7px 10px 10px;
+        white-space: nowrap;
     }
 
     i{
@@ -131,7 +132,7 @@
 
         p{
             height: 15px;
-            margin: 0px 0px 0px 5px;
+            margin: 0px 0px 0px 0px;
             text-align: left;
         }
     }
