@@ -12,11 +12,15 @@ a {
 }
 
 body h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 body h2 {
-  font-size: 17px;
+  font-size: 1rem;
+}
+
+body p {
+  font-size: 1rem;
 }
 
 .btn-main {
@@ -74,7 +78,6 @@ body h2 {
           justify-content: center;
   border: none;
   font-weight: 600;
-  font-size: 15px;
   color: #575757;
   outline: none;
   cursor: pointer;
@@ -392,7 +395,6 @@ footer a {
 
 #intro p {
   color: #575757;
-  font-size: 17px;
   margin: 0px;
 }
 
@@ -481,7 +483,6 @@ footer a {
   background-color: #9356DC;
   color: #fff;
   font-weight: 400;
-  font-size: 15px;
   padding: 2px 7px;
   border-radius: 50px;
 }
@@ -583,7 +584,6 @@ footer a {
 .new-tag {
   background-color: #99E2D0;
   color: #278870;
-  font-size: 14px;
   font-weight: bold;
   width: 80px;
   text-align: center;

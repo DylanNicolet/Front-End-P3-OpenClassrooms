@@ -18,7 +18,6 @@
 
     p{
         color: $font-dark;
-        font-size: 17px;
         margin: 0px;
     }
 
@@ -82,7 +81,6 @@
             background-color: $color-primary;
             color: #fff;
             font-weight: 400;
-            font-size: 15px;
             padding: 2px 7px;
             border-radius: 50px;
         }
@@ -173,7 +171,6 @@
 .new-tag{
     background-color: $color-tertiary;
     color: darken($color-tertiary,40%);
-    font-size: 14px;
     font-weight: bold;
     width: 80px;
     text-align: center;
