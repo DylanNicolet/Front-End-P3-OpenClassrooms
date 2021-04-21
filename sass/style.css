@@ -23,6 +23,46 @@ body p {
   font-size: 1rem;
 }
 
+/*-----------loader----------*/
+@-webkit-keyframes loader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes loader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-bg {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+@keyframes loader-bg {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
 .btn-main {
   width: 180px;
   border-radius: 50px;
@@ -121,6 +161,46 @@ body p {
   position: absolute;
   left: 6px;
   z-index: -1;
+}
+
+.loader-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9000;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-animation: loader-bg 3s;
+          animation: loader-bg 3s;
+}
+
+.loader-animation {
+  position: relative;
+}
+
+.utensils--loader {
+  font-size: 50px;
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+}
+
+.fa-fish--loader {
+  font-size: 50px;
+  height: 100px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: loader-animation 1.7s infinite;
+          animation: loader-animation 1.7s infinite;
 }
 
 header {

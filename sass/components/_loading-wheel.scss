@@ -1,0 +1,30 @@
+.loader-bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: loader-bg 3s;
+}
+
+.loader-animation{
+    position: relative;
+}
+
+.utensils--loader{
+    font-size: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+}
+
+.fa-fish--loader{
+    font-size: 50px;
+    height: 100px;
+    transform-origin: bottom;
+    animation: loader-animation 1.7s infinite;
+}
