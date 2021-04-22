@@ -92,14 +92,25 @@
     border: none;
     background-color: white;
 
-    i{
+    &--inactive{
         font-size: 20px;
     }
 
     &--active{
         @include btn-favorite-gradient;
         position: absolute;
-        left: 6px;
-        z-index: -1;
+        left: 5.5px;
+        z-index: 1;
+        opacity: 0;
+        transform-origin: bottom;
+        font-size: 20px;
+
+        &:hover{
+            animation: favorite-active 1s both;
+        }
+
+        &:hover + .btn-favorite--inactive{
+            animation: favorite-inactive 1s both;
+        }
     }
 }
