@@ -179,8 +179,8 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
-  -webkit-animation: loader-bg 3s;
-          animation: loader-bg 3s;
+  -webkit-animation: loader-bg 3.5s;
+          animation: loader-bg 3.5s;
 }
 
 .loader-animation {
@@ -188,6 +188,7 @@ body p {
 }
 
 .utensils--loader {
+  color: #FF79DA;
   font-size: 50px;
   position: absolute;
   bottom: -20px;
@@ -195,12 +196,15 @@ body p {
 }
 
 .fa-fish--loader {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 50px;
   height: 100px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-animation: loader-animation 1.7s infinite;
-          animation: loader-animation 1.7s infinite;
+  -webkit-animation: loader-animation 1.7s 0.4s cubic-bezier(0, 0, 0, 0) infinite;
+          animation: loader-animation 1.7s 0.4s cubic-bezier(0, 0, 0, 0) infinite;
 }
 
 header {

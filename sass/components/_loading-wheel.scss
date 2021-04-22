@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: loader-bg 3s;
+    animation: loader-bg 3.5s;
 }
 
 .loader-animation{
@@ -16,6 +16,7 @@
 }
 
 .utensils--loader{
+    color: $color-secondary;
     font-size: 50px;
     position: absolute;
     bottom: -20px;
@@ -23,8 +24,9 @@
 }
 
 .fa-fish--loader{
+    @include btn-favorite-gradient;
     font-size: 50px;
     height: 100px;
     transform-origin: bottom;
-    animation: loader-animation 1.7s infinite;
+    animation: loader-animation 1.7s .4s cubic-bezier(0,0,0,0) infinite;
 }
