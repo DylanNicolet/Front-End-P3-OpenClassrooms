@@ -2,13 +2,13 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    z-index: 9000;
+    z-index: -5;
     background-color: white;
+    animation: loader-bg 3.5s;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: loader-bg 3.5s;
 }
 
 .loader-animation{
