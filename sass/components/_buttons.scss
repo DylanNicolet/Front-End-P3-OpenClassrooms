@@ -7,15 +7,35 @@
     display: block;
     margin: 30px auto 0px auto;
     padding: 13px 20px;
+    position: relative;
     @include btn-gradient;
     @include drop-shadow;
+    z-index: 1;
+    overflow: hidden;
 
     a{
         color: #fff;
     }
 
     &:hover{
-        @include btn-hover;
+        @include drop-shadow--dark;
+
+        &::after{
+            opacity: 1;
+        }
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @include btn-hover--bg;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
     }
 }
 
