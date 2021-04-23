@@ -32,3 +32,9 @@
         @content;
     }
 }
+
+@mixin ultra-wide-only{
+    @media only screen and (min-width:map-get($breakpoint,ultra-wide)){
+        @content;
+    }
+}

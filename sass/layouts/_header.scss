@@ -16,11 +16,12 @@ header{
 }
 
 .header--homepage{
-        @include tablet-only{
-            text-align: left;
+    @include tablet-only{
+        text-align: left;
+        margin: auto auto 15px auto;
 
-            img{
-                margin: 20px 5% 15px 5%;
-            }
+        img{
+            margin: 20px 5% 15px 5%;
         }
     }
+}

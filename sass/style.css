@@ -1,8 +1,9 @@
 body {
   width: 100%;
-  margin: 0px;
+  margin: auto;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  max-width: 1980px;
 }
 
 a {
@@ -21,6 +22,12 @@ body h2 {
 
 body p {
   font-size: 1rem;
+}
+
+@media only screen and (min-width: 1260px) {
+  body h1 {
+    font-size: 1.7rem;
+  }
 }
 
 /*-----------loader----------*/
@@ -48,26 +55,26 @@ body p {
 @-webkit-keyframes loader-bg {
   0% {
     opacity: 1;
-    z-index: -4;
+    z-index: 5;
   }
   90% {
     opacity: 1;
   }
   100% {
-    z-index: -4;
+    z-index: 5;
   }
 }
 
 @keyframes loader-bg {
   0% {
     opacity: 1;
-    z-index: -4;
+    z-index: 5;
   }
   90% {
     opacity: 1;
   }
   100% {
-    z-index: -4;
+    z-index: 5;
   }
 }
 
@@ -281,8 +288,8 @@ body p {
   height: 100px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-animation: loader-animation 1.7s 0.4s cubic-bezier(0, 0, 0, 0) infinite;
-          animation: loader-animation 1.7s 0.4s cubic-bezier(0, 0, 0, 0) infinite;
+  -webkit-animation: loader-animation 1.7s 0.5s cubic-bezier(0, 0, 0, 0) infinite;
+          animation: loader-animation 1.7s 0.5s cubic-bezier(0, 0, 0, 0) infinite;
 }
 
 header {
@@ -307,6 +314,7 @@ header img {
 @media only screen and (min-width: 768px) {
   .header--homepage {
     text-align: left;
+    margin: auto auto 15px auto;
   }
   .header--homepage img {
     margin: 20px 5% 15px 5%;
@@ -534,6 +542,67 @@ footer a {
   transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
+.restaurant-section__card {
+  width: 90%;
+  margin: 15px auto;
+  padding: 0px 0px 15px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
+          box-shadow: 0px 5px 10px #b6b6b6;
+  position: relative;
+  cursor: pointer;
+}
+
+.restaurant-section__card img {
+  height: 170px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media only screen and (min-width: 1260px) {
+  .restaurant-section__card img {
+    height: 150px;
+  }
+}
+
+.restaurant-section__card h2 {
+  margin: 10px 10px 4px 10px;
+}
+
+.restaurant-section__card p {
+  margin: 0px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant-section__card {
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .restaurant-section__card {
+    width: 20%;
+  }
+}
+
+.new-tag {
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 2px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0px;
+}
+
 @media only screen and (min-width: 1260px) {
   #hero {
     display: -webkit-box;
@@ -555,9 +624,15 @@ footer a {
   padding: 40px 0px;
 }
 
-#intro p {
+#intro__text {
   color: #575757;
   margin: 0px;
+}
+
+@media only screen and (min-width: 1260px) {
+  #intro__text {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -694,66 +769,5 @@ footer a {
 .restaurant-section h1 {
   width: 90%;
   margin: 0px auto 20px auto;
-}
-
-.restaurant-section__card {
-  width: 90%;
-  margin: 15px auto;
-  padding: 0px 0px 15px 0px;
-  background-color: #fff;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
-          box-shadow: 0px 5px 10px #b6b6b6;
-  position: relative;
-  cursor: pointer;
-}
-
-.restaurant-section__card img {
-  height: 170px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-@media only screen and (min-width: 1260px) {
-  .restaurant-section__card img {
-    height: 150px;
-  }
-}
-
-.restaurant-section__card h2 {
-  margin: 10px 10px 4px 10px;
-}
-
-.restaurant-section__card p {
-  margin: 0px 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .restaurant-section__card {
-    width: 43%;
-  }
-}
-
-@media only screen and (min-width: 1260px) {
-  .restaurant-section__card {
-    width: 20%;
-  }
-}
-
-.new-tag {
-  background-color: #99E2D0;
-  color: #278870;
-  font-weight: bold;
-  width: 80px;
-  text-align: center;
-  padding: 5px 0px;
-  border-radius: 2px;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
