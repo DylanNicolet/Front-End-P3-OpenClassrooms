@@ -114,3 +114,16 @@
         }
     }
 }
+
+.btn-favorite--menu{
+    right: 20px;
+    bottom: 30px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: $bkg-secondary;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    height: 50px;
+}
