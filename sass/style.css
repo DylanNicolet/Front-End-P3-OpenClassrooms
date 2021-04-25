@@ -246,6 +246,12 @@ body p {
   right: 5px;
   height: 50px;
 }
+@media only screen and (min-width: 1260px) {
+  .btn-favorite--menu {
+    position: unset;
+    background-color: #fff;
+  }
+}
 
 .loader-bg {
   width: 100%;
@@ -353,6 +359,14 @@ footer a {
   position: absolute;
   z-index: -5;
 }
+@media only screen and (min-width: 1260px) {
+  .menu__picture {
+    position: initial;
+    width: 90%;
+    height: 350px;
+    margin: auto 5% auto 5%;
+  }
+}
 
 .menu-section {
   background-color: whitesmoke;
@@ -362,11 +376,29 @@ footer a {
   border-top-right-radius: 30px;
   overflow: hidden;
 }
+@media only screen and (min-width: 1260px) {
+  .menu-section {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+  }
+}
 .menu-section__title {
   margin: 0px 5%;
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+@media only screen and (min-width: 1260px) {
+  .menu-section__title {
+    width: 100%;
+    margin: auto;
+    justify-content: left;
+    align-items: center;
+  }
 }
 .menu-section__title h1 {
   margin: 25px 0px 0px 0px;
@@ -374,11 +406,21 @@ footer a {
   font-weight: 400;
   font-size: 2rem;
 }
+@media only screen and (min-width: 1260px) {
+  .menu-section__title h1 {
+    margin: 0px 20px 0px 0px;
+  }
+}
 .menu-section h3 {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 45px 5% 20px 5%;
   position: relative;
+}
+@media only screen and (min-width: 1260px) {
+  .menu-section h3 {
+    margin: 45px 5% 35px 5%;
+  }
 }
 .menu-section h3::before {
   content: "";
@@ -389,6 +431,16 @@ footer a {
   height: 3px;
   background-color: #99E2D0;
   margin: 0px 0px -5px 0px;
+}
+
+@media only screen and (min-width: 1260px) {
+  .meal-type {
+    width: 30%;
+    background-color: whitesmoke;
+    margin: 30px 0px 0px 0px;
+    border-radius: 20px;
+    padding: 0px 0px 20px 0px;
+  }
 }
 
 .animation-trigger {
