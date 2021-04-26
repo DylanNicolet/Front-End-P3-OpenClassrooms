@@ -6,11 +6,16 @@
         position: absolute;
         z-index: -5;
 
+        @include tablet-only{
+            height: 440px;
+        }
+
         @include desktop-only{
             position: initial;
             width: 90%;
-            height: 350px;
+            height: 400px;
             margin: auto 5% auto 5%;
+            @include drop-shadow;
         }
     }
 }
@@ -22,6 +27,11 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
+
+    @include tablet-only{
+        margin: 400px 0px 0px 0px;
+    }
+
     @include desktop-only{
         width: 90%;
         margin: 30px auto;
