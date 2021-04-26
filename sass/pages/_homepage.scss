@@ -1,3 +1,46 @@
+.location-selector{
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 2.5px 4px rgb(209, 209, 209);
+    background-color: darken($bkg-secondary, 5%);
+    
+    i{
+        margin: auto 20px;
+        color: $font-dark;
+        font-size: 17px;
+
+        @include tablet-only{
+            margin: auto 10px auto 0px;
+        }
+    }
+
+    input{
+        background-color: darken($bkg-secondary, 5%);
+        font-weight: 600;
+        color: $font-dark;
+        border: none;
+        outline: none;
+        width: 40%;
+        font-size: 1.1rem;
+
+        @include tablet-only{
+            width: 50%;
+            font-size: 1rem;
+        }
+    }
+
+    @include tablet-only{
+        padding: 10px 0px;
+        width: 240px;
+        position: absolute;
+        right: 5%;
+        top: 16px;
+        border-radius: 50px;
+    }
+}
+
 #hero{
     @include desktop-only{
         display: flex;

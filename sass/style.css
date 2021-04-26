@@ -204,39 +204,6 @@ body p {
   visibility: hidden;
 }
 
-.btn-locator {
-  width: 100%;
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  font-weight: 600;
-  color: #575757;
-  outline: none;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0px 2.5px 4px #d1d1d1;
-          box-shadow: inset 0px 2.5px 4px #d1d1d1;
-}
-
-.btn-locator i {
-  margin: auto 13px;
-}
-
-@media only screen and (min-width: 768px) {
-  .btn-locator {
-    width: 180px;
-    padding: 0px 20px 0px 0px;
-    position: absolute;
-    right: 5%;
-    top: 16px;
-    border-radius: 50px;
-  }
-}
-
 .btn-favorite {
   position: absolute;
   right: 20px;
@@ -730,6 +697,60 @@ footer a {
   top: 12px;
   right: 12px;
   margin: 0px;
+}
+
+.location-selector {
+  width: 100%;
+  padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0px 2.5px 4px #d1d1d1;
+          box-shadow: inset 0px 2.5px 4px #d1d1d1;
+  background-color: #e8e8e8;
+}
+
+.location-selector i {
+  margin: auto 20px;
+  color: #575757;
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 768px) {
+  .location-selector i {
+    margin: auto 10px auto 0px;
+  }
+}
+
+.location-selector input {
+  background-color: #e8e8e8;
+  font-weight: 600;
+  color: #575757;
+  border: none;
+  outline: none;
+  width: 40%;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .location-selector input {
+    width: 50%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .location-selector {
+    padding: 10px 0px;
+    width: 240px;
+    position: absolute;
+    right: 5%;
+    top: 16px;
+    border-radius: 50px;
+  }
 }
 
 @media only screen and (min-width: 1260px) {
