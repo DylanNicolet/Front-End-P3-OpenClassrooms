@@ -1,3 +1,48 @@
+.meal-type :nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.meal-type :nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.meal-type :nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.meal-type :nth-child(5) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.meal-type :nth-child(6) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.meal-type :nth-child(7) {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.meal-type :nth-child(8) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.meal-type :nth-child(9) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
+.meal-type :nth-child(10) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
 body {
   width: 100%;
   margin: auto;
@@ -117,8 +162,8 @@ body p {
 /*-------meal card-------*/
 @-webkit-keyframes meal-card {
   0% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -129,8 +174,8 @@ body p {
 }
 @keyframes meal-card {
   0% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   100% {
