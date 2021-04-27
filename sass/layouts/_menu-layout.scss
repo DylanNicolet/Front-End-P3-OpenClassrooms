@@ -98,108 +98,48 @@
 }
 
 .animation-trigger{
-    width: 100%;
-
-    &:hover + .check-icon{
-        transform: translate(0px);
-    }
-
-    &:hover ~i{
-        transform: translate(0px) rotate(360deg);
-    }
-
-    &:hover ~.meal-card__price{
-        transform: translate(-71px);
-    }
-
-    &:hover ~.meal-card__suspenssion{
-        transform: translate(-90px);
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .meal-card{
-    background-color: white;
     position: relative;
     width: 90%;
-    margin: 20px auto;
-    @include drop-shadow;
+    margin: 10px auto;
+    background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    border-radius: 15px;
-    cursor: pointer;
-    overflow: hidden;
-    animation: meal-card 2s both;
-    @include desktop-only{
-    }
 
     h2{
-        width: 100%;
-        margin: 10px 7px 7px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px;
     }
 
-    &__description{
-        margin: 0px 7px 10px 10px;
+    &--description{
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px;
+    }
+
+    &--price{
     }
 
     i{
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        z-index: 1;
         position: absolute;
         right: 25px;
-        top: 39%;
-        transform: translate(71px) rotate(0deg);
-        transform-origin:center;
-        transition: all 1000ms;
-        color: white;
-    }
-
-    &__price{
-        position: absolute;
-        right: -1px;
-        bottom: 10px;
-        font-weight: 600;
-        color: $font-dark;
-        width: 45px;
-        margin: 0px 0px;
-        transform: translate(0px);
-        transition: transform 1000ms;
-        z-index: 3;
-        background-color: white;
-
-        p{
-            margin: 0px;
-        }
-    }
-
-    &__suspenssion{
-        height: 15px;
-        width: 25px;
-        position: absolute;
-        background-color: white;
-        right: 20px;
-        bottom: 14px;
-        transform: translate(0px);
-        transition: transform 1000ms;
-        z-index: 2;
-
-        p{
-            height: 15px;
-            margin: 0px 0px 0px 0px;
-            text-align: left;
-        }
+        top: 25px;
+        color: #fff;
+        font-size: 20px;
     }
 }
 
-.check-icon{
+.meal-price--background{
+    min-width: 70px;
+    height: 70px;
     background-color: $color-tertiary;
-    width: 70px;
-    height: 100px;
-    position: absolute;
-    right: 0px;
-    transform: translate(71px);
-    transition: transform 1000ms;
 }

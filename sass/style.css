@@ -553,134 +553,52 @@ footer a {
 }
 
 .animation-trigger {
-  width: 100%;
-}
-
-.animation-trigger:hover + .check-icon {
-  -webkit-transform: translate(0px);
-          transform: translate(0px);
-}
-
-.animation-trigger:hover ~ i {
-  -webkit-transform: translate(0px) rotate(360deg);
-          transform: translate(0px) rotate(360deg);
-}
-
-.animation-trigger:hover ~ .meal-card__price {
-  -webkit-transform: translate(-71px);
-          transform: translate(-71px);
-}
-
-.animation-trigger:hover ~ .meal-card__suspenssion {
-  -webkit-transform: translate(-90px);
-          transform: translate(-90px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .meal-card {
-  background-color: white;
   position: relative;
   width: 90%;
-  margin: 20px auto;
-  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
-          box-shadow: 0px 5px 10px #b6b6b6;
+  margin: 10px auto;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-animation: meal-card 2s both;
-          animation: meal-card 2s both;
 }
 
 .meal-card h2 {
-  width: 100%;
-  margin: 10px 7px 7px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px;
 }
 
-.meal-card__description {
-  margin: 0px 7px 10px 10px;
+.meal-card--description {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px;
 }
 
 .meal-card i {
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  z-index: 1;
   position: absolute;
   right: 25px;
-  top: 39%;
-  -webkit-transform: translate(71px) rotate(0deg);
-          transform: translate(71px) rotate(0deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms;
-  color: white;
+  top: 25px;
+  color: #fff;
+  font-size: 20px;
 }
 
-.meal-card__price {
-  position: absolute;
-  right: -1px;
-  bottom: 10px;
-  font-weight: 600;
-  color: #575757;
-  width: 45px;
-  margin: 0px 0px;
-  -webkit-transform: translate(0px);
-          transform: translate(0px);
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
-  z-index: 3;
-  background-color: white;
-}
-
-.meal-card__price p {
-  margin: 0px;
-}
-
-.meal-card__suspenssion {
-  height: 15px;
-  width: 25px;
-  position: absolute;
-  background-color: white;
-  right: 20px;
-  bottom: 14px;
-  -webkit-transform: translate(0px);
-          transform: translate(0px);
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
-  z-index: 2;
-}
-
-.meal-card__suspenssion p {
-  height: 15px;
-  margin: 0px 0px 0px 0px;
-  text-align: left;
-}
-
-.check-icon {
+.meal-price--background {
+  min-width: 70px;
+  height: 70px;
   background-color: #99E2D0;
-  width: 70px;
-  height: 100px;
-  position: absolute;
-  right: 0px;
-  -webkit-transform: translate(71px);
-          transform: translate(71px);
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 .restaurant-section__card {
