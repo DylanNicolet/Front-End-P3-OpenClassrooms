@@ -9,16 +9,17 @@
     padding: 13px 20px;
     position: relative;
     @include btn-gradient;
-    @include drop-shadow;
+    box-shadow: 0px 5px 10px $shadow-color;
     z-index: 1;
     overflow: hidden;
+    transition: box-shadow 500ms;
 
     a{
         color: #fff;
     }
 
     &:hover{
-        @include drop-shadow--dark;
+        box-shadow: 0px 5px 10px darken($shadow-color, 20%);
 
         &::after{
             opacity: 1;
@@ -35,7 +36,7 @@
         @include btn-hover--bg;
         opacity: 0;
         z-index: -1;
-        transition: opacity 250ms;
+        transition: opacity 500ms;
     }
 }
 
