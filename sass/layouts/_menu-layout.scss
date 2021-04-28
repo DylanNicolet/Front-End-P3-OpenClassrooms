@@ -98,26 +98,36 @@
 }
 
 .animation-trigger{
+    width: max-content;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &:hover + .meal-card--price{
+        margin: 10px 85px 10px 0px;
+    }
+
+    &:hover ~.check-icon--background{
+        transform: translateX(-70px);
+    }
+
+    &:hover ~i{
+        transform: translateX(0px) rotate(0deg);
+    }
 }
 
 .meal-card{
     position: relative;
     width: 90%;
-    margin: 10px auto;
+    margin: 15px auto;
     background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    @include drop-shadow;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
-
-    h2{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 10px;
-    }
+    cursor: pointer;
+    animation: meal-card 2s both;
 
     &--description{
         white-space: nowrap;
@@ -126,7 +136,19 @@
         margin: 10px;
     }
 
+    h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+
     &--price{
+        color: $font-dark;
+        font-weight: bold;align-self: flex-end;
+        margin: 10px 15px 10px 0px;
+        transition: margin 1s;
     }
 
     i{
@@ -135,11 +157,18 @@
         top: 25px;
         color: #fff;
         font-size: 20px;
+        transform: translateX(70px) rotate(360deg);
+        transition: all 1s;
     }
 }
 
-.meal-price--background{
+
+
+.check-icon--background{
+    position: absolute;
+    right: -70px;
     min-width: 70px;
-    height: 70px;
+    height: 71px;
     background-color: $color-tertiary;
+    transition: transform 1s;
 }

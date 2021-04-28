@@ -553,31 +553,46 @@ footer a {
 }
 
 .animation-trigger {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.animation-trigger:hover + .meal-card--price {
+  margin: 10px 85px 10px 0px;
+}
+
+.animation-trigger:hover ~ .check-icon--background {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+}
+
+.animation-trigger:hover ~ i {
+  -webkit-transform: translateX(0px) rotate(0deg);
+          transform: translateX(0px) rotate(0deg);
 }
 
 .meal-card {
   position: relative;
   width: 90%;
-  margin: 10px auto;
+  margin: 15px auto;
   background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 10px #b6b6b6;
+          box-shadow: 0px 5px 10px #b6b6b6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.meal-card h2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 10px;
+  cursor: pointer;
+  -webkit-animation: meal-card 2s both;
+          animation: meal-card 2s both;
 }
 
 .meal-card--description {
@@ -587,18 +602,46 @@ footer a {
   margin: 10px;
 }
 
+.meal-card h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+.meal-card--price {
+  color: #575757;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 10px 15px 10px 0px;
+  -webkit-transition: margin 1s;
+  transition: margin 1s;
+}
+
 .meal-card i {
   position: absolute;
   right: 25px;
   top: 25px;
   color: #fff;
   font-size: 20px;
+  -webkit-transform: translateX(70px) rotate(360deg);
+          transform: translateX(70px) rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.meal-price--background {
+.check-icon--background {
+  position: absolute;
+  right: -70px;
   min-width: 70px;
-  height: 70px;
+  height: 71px;
   background-color: #99E2D0;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .restaurant-section__card {
