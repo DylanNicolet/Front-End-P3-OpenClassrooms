@@ -474,17 +474,15 @@ footer a {
 }
 
 .animation-trigger {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
 }
-.animation-trigger:hover + .meal-card--price {
+.animation-trigger:hover + .meal-card__price {
   margin: 10px 85px 10px 0px;
 }
-.animation-trigger:hover ~ .check-icon--background {
+.animation-trigger:hover ~ .check-icon__background {
   transform: translateX(-70px);
 }
 .animation-trigger:hover ~ i {
@@ -505,7 +503,12 @@ footer a {
   -webkit-animation: meal-card 2s both;
           animation: meal-card 2s both;
 }
-.meal-card--description {
+.meal-card__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meal-card__description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -518,7 +521,7 @@ footer a {
   margin: 10px;
   font-size: 1.1rem;
 }
-.meal-card--price {
+.meal-card__price {
   color: #575757;
   font-weight: bold;
   align-self: flex-end;
@@ -535,9 +538,9 @@ footer a {
   transition: all 1s;
 }
 
-.check-icon--background {
+.check-icon__background {
   position: absolute;
-  right: -70px;
+  right: -71px;
   min-width: 70px;
   height: 100%;
   background-color: #99E2D0;

@@ -98,22 +98,22 @@
 }
 
 .animation-trigger{
-    width: max-content;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
 
-    &:hover + .meal-card--price{
+    &:hover + .meal-card__price{
         margin: 10px 85px 10px 0px;
     }
 
-    &:hover ~.check-icon--background{
+    &:hover ~.check-icon__background{
         transform: translateX(-70px);
     }
 
     &:hover ~i{
         transform: translateX(0px) rotate(0deg);
-    }
+    }    
 }
 
 .meal-card{
@@ -129,7 +129,13 @@
     cursor: pointer;
     animation: meal-card 2s both;
 
-    &--description{
+    &__text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__description{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -144,7 +150,7 @@
         font-size: 1.1rem;
     }
 
-    &--price{
+    &__price{
         color: $font-dark;
         font-weight: bold;align-self: flex-end;
         margin: 10px 15px 10px 0px;
@@ -164,9 +170,9 @@
 
 
 
-.check-icon--background{
+.check-icon__background{
     position: absolute;
-    right: -70px;
+    right: -71px;
     min-width: 70px;
     height: 100%;
     background-color: $color-tertiary;
