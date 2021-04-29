@@ -539,7 +539,7 @@ footer a {
   position: absolute;
   right: -70px;
   min-width: 70px;
-  height: 80px;
+  height: 100%;
   background-color: #99E2D0;
   transition: transform 1s;
 }
