@@ -19,6 +19,7 @@ quality products.
 
 >## **Key requirements for the project and a visual of the live results**
 1. Create a loading spinner for the homepage with a design consistent with the graphic charter provided.
+
 <p align="center"><img src="README-media/load-spinner.gif">
 
 2. The Heart shape icon should fill up gradually when hovered on.
