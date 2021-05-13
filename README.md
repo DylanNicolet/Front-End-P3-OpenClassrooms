@@ -3,8 +3,6 @@
 
 <h3 align="center">An online food ordering service</h3>
 
-<p align="center"><img src="gif-here.gif">
-
 ># **[ohmyfood Live Webpage link](dylannicolet.github.io)**
 
 >## **In a few words**
@@ -21,14 +19,18 @@ quality products.
 
 >## **Key requirements for the project and a visual of the live results**
 1. Create a loading spinner for the homepage with a design consistent with the graphic charter provided.
+<p align="center"><img src="README-media/load-spinner.gif">
 
 2. The Heart shape icon should fill up gradually when hovered on.
+<p align="center"><img src="README-media/Heart.gif">
 
 3. The main buttons should lighten slightly and their drop shadow be more visible when hovered on.
 
 4. When arriving on a restaurant's page, the meals should appear gradually with a slight time lag.
+<p align="center"><img src="README-media/meal-cards.gif">
 
 5. When hovering over a meal, a checkmark should slide in from the right side of the meal.
+<p align="center"><img src="README-media/Meal-selector.gif">
 
 6. If the title of the dish is too long, it should be trimmed with suspension points automatically.
 
