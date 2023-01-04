@@ -3,7 +3,7 @@
 
 <h3 align="center">An online food ordering service</h3>
 
-># **[ohmyfood Live Webpage link](https://dylannicolet.github.io/Front-End-P3-OpenClassrooms/)**
+># **[ohmyfood Live Webpage link](https://ohmyfood-dylannicolet.netlify.app/)**
 
 >## **In a few words**
 The concept will allow users to compose their own menu from gastronomic restaurants and reduce waiting time in restaurants because they make their choice in advance.
